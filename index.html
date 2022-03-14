@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join Yoga Room to find peace. Special offers for beginners."
+    />
+    <meta property="og:title" content="Yoga Room - Demo Responsive Website" />
+    <meta
+      property="og:description"
+      content="Light design with personal touch. Clear call to actions throughout the website. Nice color scheme."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yogaroom.netlify.app/" />
+
+    <title>Yoga Room - Demo Responsive Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600;700&family=Orbitron:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="nav collapsible">
+      <div class="nav__logo">
+        <a aria-label="YogaRoom" href="/">
+          <svg class="nav__logo-image">
+            <use href="images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <a aria-label="YogaRoom" href="/" class="nav__logo-text">Yoga room</a>
+      </div>
+
+      <svg class="icon icon--white nav__toggler">
+        <use href="images/sprite.svg#menu"></use>
+      </svg>
+
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Studio</a></li>
+        <li class="nav__item"><a href="#">Offers</a></li>
+        <li class="nav__item"><a href="#">Teachers</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="block hero hero--mobile hero--wide">
+      <div class="grid">
+        <div class="view-mobile">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/lotus1_w260.webp 1x, images/lotus1_w784.webp 2x"
+            />
+            <source type="image/svg" srcset="images/lotus1.svg" />
+            <img
+              class="hero__lotus"
+              src="images/lotus1.svg"
+              alt="Gold lotus icon"
+            />
+          </picture>
+
+          <h1 class="hero__heading">YOGA ROOM</h1>
+          <p class="hero__cite">
+            <span>The place where you </span>
+            <span class="hero__accent">find peace</span>
+          </p>
+
+          <a href="#" class="btn btn--small btn--accent">Join Us</a>
+        </div>
+
+        <div class="view-wide">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/lotus1_w784.webp 1x, images/lotus1_w1280.webp 2x"
+            />
+            <source type="image/svg" srcset="images/lotus1.svg" />
+            <img
+              class="hero__lotus"
+              src="images/lotus1.svg"
+              alt="Gold lotus icon"
+            />
+          </picture>
+
+          <h1 class="hero__heading">YOGA ROOM</h1>
+          <p class="hero__cite">
+            <span>The place where you</span>
+            <span class="hero__accent">find peace</span>
+          </p>
+
+          <a href="#" class="btn btn--small btn--accent">Join Us</a>
+        </div>
+      </div>
+    </section>
+    <p style="font-size: 1.5rem; color: black">
+      Photo by EKATERINA BOLOVTSOVA from Pexels
+    </p>
+
+    <section class="block container plans">
+      <header class="block__header">
+        <h2 class="block__heading">Beginner Programmes</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure
+          necessitatibus eaque. Molestiae, deserunt perferendis.
+        </p>
+      </header>
+      <div class="grid grid--1x3" data-aos="slide-up" data-aos-duration="1500">
+        <div class="plan">
+          <div class="card card--grey">
+            <header class="card__header">
+              <div class="plan__image">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="images/cushion@1x.png 1x, images/cushion@2x.png 2x"
+                  />
+
+                  <img
+                    src="images/cushion@2x.png"
+                    alt="Black sketch of meditation cushion"
+                  />
+                </picture>
+              </div>
+              <div class="plan__name">Free Mind</div>
+            </header>
+            <div class="card__body">
+              <div class="plan__price">only €60</div>
+              <ul class="list list--tick">
+                <li class="list__item">4 weeks programme</li>
+                <li class="list__item">3 meditations per week</li>
+                <li class="list__item">1 personal consultation</li>
+              </ul>
+              <div class="plan__buttons">
+                <button class="btn btn--rainbow">
+                  <span class="btn btn__cup">Learn More</span>
+                </button>
+                <button class="btn btn--rainbow">
+                  <span class="btn btn__cup">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--gold">
+          <div class="card card--gold">
+            <header class="card__header">
+              <div class="plan__image">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="images/samadhi@1x.png 1x, images/samadhi@2x.png 2x"
+                  />
+                  <img
+                    src="images/samadhi@2x.png"
+                    alt="Black sketch of samadhi symbol"
+                  />
+                </picture>
+              </div>
+              <div class="plan__name">Mind & Body</div>
+            </header>
+            <div class="card__body">
+              <div class="plan__price">only €90</div>
+              <ul class="list list--tick">
+                <li class="list__item">6 weeks programme</li>
+                <li class="list__item">2 yoga classes per week</li>
+                <li class="list__item">2 meditations per week</li>
+              </ul>
+              <div class="plan__buttons">
+                <button class="btn btn--rainbow">
+                  <span class="btn btn__cup">Learn More</span>
+                </button>
+                <button class="btn btn--rainbow">
+                  <span class="btn btn__cup">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--grey">
+            <header class="card__header">
+              <div class="plan__image">
+                <picture>
+                  <source
+                    type="image/png"
+                    srcset="images/bowPose@1x.png 1x, images/bowPose@2x.png 2x"
+                  />
+                  <img
+                    src="images/bowPose@2x.png"
+                    alt="Black sketch of yoga bow pose"
+                  />
+                </picture>
+              </div>
+              <div class="plan__name">Free Body</div>
+            </header>
+            <div class="card__body">
+              <div class="plan__price">only €70</div>
+              <ul class="list list--tick">
+                <li class="list__item">4 weeks programme</li>
+                <li class="list__item">2 yoga classes per week</li>
+                <li class="list__item">1 healing session</li>
+              </ul>
+              <div class="plan__buttons">
+                <button class="btn btn--rainbow">
+                  <span class="btn btn__cup">Learn More</span>
+                </button>
+                <button class="btn btn--rainbow">
+                  <span class="btn btn__cup">Buy Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block--light feature">
+      <header class="block__header">
+        <h2 class="block__heading">Regular Classes</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, nam!
+        </p>
+      </header>
+
+      <span
+        class="container--mid assanas assanas--brown"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
+        <svg>
+          <use href="images/sprite.svg#a1"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a2"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a3"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a4"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a5"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a6"></use>
+        </svg>
+      </span>
+
+      <article class="container grid grid--1x2 feature__item">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon">
+              <use href="images/sprite.svg#symbol1"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Fly Yoga</h3>
+
+          <p>
+            Photo by cottonbro from Pexels. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quam obcaecati vel ad unde est illo
+            at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+
+        <picture data-aos="zoom-in-left" data-aos-duration="2200">
+          <source
+            type="image/webp"
+            srcset="
+              images/fly@1x.webp  1x,
+              images/fly@1.5.webp 2x,
+              images/fly@2x.webp  2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              images/fly@1x.jpg  1x,
+              images/fly@1.5.jpg 2x,
+              images/fly@2x.jpg  2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="images/fly@1.5.jpg"
+            alt="Woman performing half split on yoga swing"
+          />
+        </picture>
+      </article>
+
+      <article class="container grid grid--1x2 feature__item">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon">
+              <use href="images/sprite.svg#symbol2"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Iyengar Yoga</h3>
+
+          <p>
+            Photo by Monstera from Pexels. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quam obcaecati vel ad unde est illo
+            at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+
+        <picture data-aos="zoom-in-right" data-aos-duration="2200">
+          <source
+            type="image/webp"
+            srcset="
+              images/iyengar@1x.webp  1x,
+              images/iyengar@1.5.webp 2x,
+              images/iyengar@2x.webp  2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              images/iyengar@1x.jpg  1x,
+              images/iyengar@1.5.jpg 2x,
+              images/iyengar@2x.jpg  2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="images/iyengar@1.5.jpg"
+            alt="Woman stretching on mat "
+          />
+        </picture>
+      </article>
+      <article class="container grid grid--1x2 feature__item">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon">
+              <use href="images/sprite.svg#symbol3"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Ashtanga Yoga</h3>
+
+          <p>
+            Photo by Marta Wave from Pexels. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quam obcaecati vel ad unde est illo
+            at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+
+        <picture data-aos="zoom-in-left" data-aos-duration="2200">
+          <source
+            type="image/webp"
+            srcset="
+              images/ashtanga@1x.webp  1x,
+              images/ashtanga@1.5.webp 2x,
+              images/ashtanga@2x.webp  2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              images/ashtanga@1x.jpg  1x,
+              images/ashtanga@1.5.jpg 2x,
+              images/ashtanga@2x.jpg  2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="images/ashtanga@1.5.jpg"
+            alt="Woman performing headstand with split"
+          />
+        </picture>
+      </article>
+      <article class="container grid grid--1x2 feature__item">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon">
+              <use href="images/sprite.svg#symbol4"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Meditation</h3>
+
+          <p>
+            Photo by Rebecca Zaal from Pexels. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quam obcaecati vel ad unde est illo
+            at. Labore excepturi officia dolores!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+
+        <picture data-aos="zoom-in-right" data-aos-duration="2200">
+          <source
+            type="image/webp"
+            srcset="
+              images/meditation@1x.webp  1x,
+              images/meditation@1.5.webp 2x,
+              images/meditation@2x.webp  2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              images/meditation@1x.jpg  1x,
+              images/meditation@1.5.jpg 2x,
+              images/meditation@2x.jpg  2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="images/meditation@1.5.jpg"
+            alt="Golden Buddha statue"
+          />
+        </picture>
+      </article>
+
+      <span
+        class="container--mid assanas assanas--brown"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <svg>
+          <use href="images/sprite.svg#a7"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a8"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a2"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a9"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a12"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a13"></use>
+        </svg>
+      </span>
+    </section>
+
+    <section class="block block--light feature-other">
+      <header class="block__header">
+        <h2 class="block__heading">Healing Therapies</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, nam!
+        </p>
+      </header>
+
+      <article
+        class="container grid grid--1x2 feature-other__item"
+        data-aos="zoom-up"
+        data-aos-duration="3000"
+      >
+        <div>
+          <div
+            class="therapies-mobile"
+            data-aos="zoom-in-left"
+            data-aos-duration="2200"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/bowl@1x.webp  1x,
+                  images/bowl@1.5.webp 2x,
+                  images/bowl@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/bowl@1x.jpg  1x,
+                  images/bowl@1.5.jpg 2x,
+                  images/bowl@2x.jpg  2x
+                "
+              />
+              <img src="images/bowl@1.5.jpg" alt="Sound bowl" />
+            </picture>
+          </div>
+
+          <picture class="block--textOutside">
+            <source
+              type="image/webp"
+              srcset="images/sound@1x.webp 1x, images/sound@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/sound@1x.jpg 1x, images/sound@2x.jpg 2x"
+            />
+            <img src="images/sound@2x.jpg" alt="Man playing sound bowl" />
+          </picture>
+
+          <h3 class="feature__heading">Sound Healing</h3>
+          <p>
+            Photo by ANTONI SHKRABA from Pexels. Modi facilis ratione dolorem
+            deserunt blanditiis soluta quo eveniet libero distinctio. Minus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            iusto voluptate consequatur repellendus enim repudiandae. Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Mollitia libero
+            eius tempora quidem illum. Possimus quo aliquid quasi nobis enim
+            iure ex,ulpa rem numquam?
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="therapies-mobile"
+            data-aos="zoom-in-right"
+            data-aos-duration="2200"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/nails@1x.webp  1x,
+                  images/nails@1.5.webp 2x,
+                  images/nails@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/nails@1x.jpg  1x,
+                  images/nails@1.5.jpg 2x,
+                  images/nails@2x.jpg  2x
+                "
+              />
+              <img
+                src="images/nails@1.5.jpg"
+                alt="Sadhu board with sharp nails"
+              />
+            </picture>
+          </div>
+
+          <picture class="block--textOutside">
+            <source
+              type="image/webp"
+              srcset="images/sadhu@1x.webp 1x, images/sadhu@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/sadhu@1x.jpg 1x, images/sadhu@2x.jpg 2x"
+            />
+            <img
+              src="images/sadhu@2x.jpg"
+              alt="Man standing on sadhu board with sharp nails"
+            />
+          </picture>
+
+          <h3 class="feature__heading">Sadhu Nails</h3>
+          <p>
+            Photo by Mikhail Nilov from Pexels. The practice of standing on the
+            nails gives us the power to work with all unexpressed emotions and
+            traumas lying deep inside. After constant practice you can take
+            charge of the Monkey Mind, which in yoga is referred to a mind that
+            is in constant flux. Above all, the practice helps each of us to get
+            ride of muscle blocks, to connect with ourselves, relieve stress and
+            restore our energy.
+          </p>
+        </div>
+        <button class="btn btn--rainbow btn--stretched">
+          Book Sound Session
+        </button>
+        <button class="btn btn--rainbow btn--stretched">
+          Book Sadhu Session
+        </button>
+      </article>
+
+      <span
+        class="container--mid assanas assanas--olive"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
+        <svg>
+          <use href="images/sprite.svg#a1"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a2"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a3"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a4"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a5"></use>
+        </svg>
+        <svg>
+          <use href="images/sprite.svg#a6"></use>
+        </svg>
+      </span>
+    </section>
+
+    <section class="block block--light showcase">
+      <div class="container--mid container--olive">
+        <div class="container container--gradient team">
+          <header class="block__header">
+            <h2 class="block__heading">Meet Our Team</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              iure necessitatibus eaque. Molestiae, deserunt perferendis.
+            </p>
+          </header>
+
+          <div
+            class="grid grid--1x2 grid--1x3"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/t1@1x.webp  1x,
+                    images/t1@1.5.webp 2x,
+                    images/t1@2x.webp  2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/t1@1x.jpg  1x,
+                    images/t1@1.5.jpg 2x,
+                    images/t1@2x.jpg  2x
+                  "
+                />
+                <img
+                  src="images/t1@1.5.jpg"
+                  alt="Asian looking gril holding exercise mat"
+                />
+              </picture>
+              <h4 class="team__name">Fly Teacher</h4>
+              <p class="team__bio">
+                Photo by Miriam Alonso from Pexels. Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+
+            <div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/t2@1x.webp  1x,
+                    images/t2@1.5.webp 2x,
+                    images/t2@2x.webp  2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/t2@1x.jpg  1x,
+                    images/t2@1.5.jpg 2x,
+                    images/t2@2x.jpg  2x
+                  "
+                />
+
+                <img
+                  src="images/t2@1.5.jpg"
+                  alt="Dark skin woman standing in tree pose"
+                />
+              </picture>
+              <h4 class="team__name">Iyengar Teacher</h4>
+              <p class="team__bio">
+                Photo by Angela Roma from Pexels. Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+
+            <div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/t3@1x.webp  1x,
+                    images/t3@1.5.webp 2x,
+                    images/t3@2x.webp  2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/t3@1x.jpg  1x,
+                    images/t3@1.5.jpg 2x,
+                    images/t3@2x.jpg  2x
+                  "
+                />
+                <img
+                  src="images/t3@1.5.jpg"
+                  alt="Smiling gril - yoga instructor"
+                />
+              </picture>
+              <h4 class="team__name">Ashtanga Teacher</h4>
+              <p class="team__bio">
+                Photo by Marta Wave from Pexels. Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+
+            <div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/t4@1x.webp  1x,
+                    images/t4@1.5.webp 2x,
+                    images/t4@2x.webp  2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/t4@1x.jpg  1x,
+                    images/t4@1.5.jpg 2x,
+                    images/t4@2x.jpg  2x
+                  "
+                />
+                <img
+                  src="images/t4@1.5.jpg"
+                  alt="Older woman sitting in lotus pose"
+                />
+              </picture>
+              <h4 class="team__name">Meditation Teacher</h4>
+              <p class="team__bio">
+                Photo by Vlada Karpovich from Pexels. Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+
+            <div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/t5@1x.webp  1x,
+                    images/t5@1.5.webp 2x,
+                    images/t5@2x.webp  2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/t5@1x.jpg  1x,
+                    images/t5@1.5.jpg 2x,
+                    images/t5@2x.jpg  2x
+                  "
+                />
+                <img src="images/t5@1.5.jpg" alt="Man holding singing bowl" />
+              </picture>
+              <h4 class="team__name">Sound Therapist</h4>
+              <p class="team__bio">
+                Photo by ANTONI SHKRABA from Pexels. Lorem ipsum dolor.
+              </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+
+            <div>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/t6@1x.webp  1x,
+                    images/t6@1.5.webp 2x,
+                    images/t6@2x.webp  2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  srcset="
+                    images/t6@1x.jpg  1x,
+                    images/t6@1.5.jpg 2x,
+                    images/t6@2x.jpg  2x
+                  "
+                />
+                <img
+                  src="images/t6@1.5.jpg"
+                  alt="Young man kneeling in front of nails boards"
+                />
+              </picture>
+              <h4 class="team__name">Sadhu Nails Therapist</h4>
+              <p class="team__bio">
+                Photo by Mikhail Nilov from Pexels. Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container callout callout--accent"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div class="grid grid--1x2">
+            <div class="callout__content">
+              <h2 class="callout__heading">Ready to Get Started ?</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident laborum neque veniam. A, quibusdam fugit.
+              </p>
+            </div>
+            <button class="btn btn--accent btn--stretched">
+              Book Free Class
+            </button>
+          </div>
+        </div>
+
+        <div class="container container--gradient facilities">
+          <header class="block__header">
+            <h2 class="block__heading">Yoga Room Facilities</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              iure necessitatibus eaque. Molestiae, deserunt perferendis.
+            </p>
+          </header>
+
+          <div
+            class="grid grid--1x2 grid--1x3"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="spec">
+              <ul class="list list--tick">
+                <li class="list__item">
+                  <h4 class="spec__heading">Yoga props</h4>
+                  <p>
+                    Photo by cottonbro from Pexels. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Alias sit odit sequi magnam
+                    consequatur.
+                  </p>
+                </li>
+                <li class="list__item">
+                  <h4 class="spec__heading">Fly room</h4>
+                  <p>
+                    Photo by cottonbro from Pexels. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Explicabo architecto natus
+                    numquam ab, a ratione.
+                  </p>
+                </li>
+                <li class="list__item">
+                  <h4 class="spec__heading">Regular room</h4>
+                  <p>
+                    Photo by Yan Krukov from Pexels. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Beatae perferendis voluptatem
+                    sit, dignissimos at similique fuga!
+                  </p>
+                </li>
+                <li class="list__item">
+                  <h4 class="spec__heading">Therapy room</h4>
+                  <p>
+                    Photo by Tiff Ng from Pexels. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Veniam quisquam, ex nostrum
+                    vero voluptates dicta excepturi vel perspiciatis
+                    consequuntur.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/props@1x.webp  1x,
+                  images/props@1.5.webp 2x,
+                  images/props@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/props@1x.jpg  1x,
+                  images/props@1.5.jpg 2x,
+                  images/props@2x.jpg  2x
+                "
+              />
+              <img
+                class="props"
+                src="images/props@1.5.jpg"
+                alt="Shelf with yoga equipment"
+              />
+            </picture>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/roomFly@1x.webp  1x,
+                  images/roomFly@1.5.webp 2x,
+                  images/roomFly@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/roomFly@1x.jpg  1x,
+                  images/roomFly@1.5.jpg 2x,
+                  images/roomFly@2x.jpg  2x
+                "
+              />
+              <img
+                class="fly"
+                src="images/roomFly@1.5.jpg"
+                alt="Exercise studio with yoga swings"
+              />
+            </picture>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/roomStudio@1x.webp  1x,
+                  images/roomStudio@1.5.webp 2x,
+                  images/roomStudio@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/roomStudio@1x.jpg  1x,
+                  images/roomStudio@1.5.jpg 2x,
+                  images/roomStudio@2x.jpg  2x
+                "
+              />
+              <img
+                class="regular"
+                src="images/roomStudio@1.5.jpg"
+                alt="Yoga studio"
+              />
+            </picture>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/roomTherapy@1x.webp  1x,
+                  images/roomTherapy@1.5.webp 2x,
+                  images/roomTherapy@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/roomTherapy@1x.jpg  1x,
+                  images/roomTherapy@1.5.jpg 2x,
+                  images/roomTherapy@2x.jpg  2x
+                "
+              />
+              <img
+                class="therapy"
+                src="images/roomTherapy@1.5.jpg"
+                alt="Tranquil meditation room"
+              />
+            </picture>
+          </div>
+
+          <div
+            class="facilities__finish"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
+            <svg>
+              <use href="images/sprite.svg#lotus2"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer-sections">
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">About Us</h2>
+
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Our Story</a></li>
+              <li class="footer__item">
+                <a href="#">Location</a>
+              </li>
+              <li class="footer__item"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Schedule</h2>
+
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Yoga Classes</a></li>
+              <li class="footer__item">
+                <a href="#">Therapies</a>
+              </li>
+              <li class="footer__item"><a href="#">Events</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Members</h2>
+
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Sign Up</a></li>
+              <li class="footer__item">
+                <a href="#">Special Offers</a>
+              </li>
+              <li class="footer__item"><a href="#">Join Mailing List</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Help</h2>
+
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Community</a></li>
+              <li class="footer__item">
+                <a href="#">Online Resources</a>
+              </li>
+              <li class="footer__item"><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__logo">
+          <div class="nav__logo">
+            <a href="/">
+              <svg class="nav__logo-image">
+                <use href="images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <a href="/" class="nav__logo-text">Yoga room</a>
+          </div>
+          <div class="footer__copyright">Copyright 2022 XmoCode</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
